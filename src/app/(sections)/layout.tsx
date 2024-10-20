@@ -4,6 +4,8 @@ import React from 'react'
 import Image from 'next/image'
 import About from './about/page'
 import { Header } from '../components/Header'
+import { Title } from '../components/ui/Title'
+import { Subtitle } from '../components/ui/Subtitle'
 
 
 interface Iprops {
@@ -48,12 +50,10 @@ export default function layout({ children }: Iprops) {
 
           </div>
           <div className="container-description bg-neutral-800 rounded-b-lg p-7 ">
-            <h1 className="text-2xl md:text-3xl font-bold text-white drop-shadow-lg mt-12">Shirly Mejia Acosta</h1>
-            <span className='text-sm text-white'>
-              Systems Engineer | FrontEnd Developer | Diseñador UI/UX | React | TypeScript | Next | Javascript | Figma | Scrum |GitHub | GitLab
-            </span>
+            <Title title='Shirly Mejia Acosta' className='text-2xl md:text-3xl font-bold text-white drop-shadow-lg mt-12'/>
+            <Subtitle subTitle='Systems Engineer | FrontEnd Developer | Diseñador UI/UX | React | TypeScript | Next | Javascript | Figma | Scrum |GitHub | GitLab' className='text-sm text-white'/>
           </div>
-        </div>
+      </div>
 
       </div>
 
