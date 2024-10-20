@@ -14,6 +14,6 @@ export const NavbarItem = ({path, title}: ItemProps) => {
 
 
   return (
-    <Link href={path} className={` text-white  hover:text-gray-500 ${currentPath === path ? "text-orange-500 border-b" : ""}`}>{title}</Link>
+    <Link href={path} className={`mb-4 p-2 text-white    hover: ${currentPath === path ? "rounded-lg bg-neutral-800 " : ""}`}>{title}</Link>
   )
 }

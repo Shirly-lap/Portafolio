@@ -1,16 +1,49 @@
 import React from 'react'
+import Image from 'next/image'
+import { GrView } from 'react-icons/gr'
+import { IoMdHeartEmpty } from 'react-icons/io'
+import { Link } from 'lucide-react'
+import { FaGithub } from 'react-icons/fa'
 
+
+const projects = [
+  { name: 'Frontend', img: "", description: "" },
+  { name: 'Diseño', img: "", skills: ['UX-UI', 'Figma', 'AWS', 'CI/CD'] },
+  { name: 'Backend', img: "", skills: ['REST APIs', 'Python', 'Postman', 'Go'] },
+  { name: 'Metodologías ágiles', img: "", skills: ['Scrum', 'Kanban', 'GitHub', 'GitLab'] },
+  { name: 'Competencias humanas', img: "", skills: ['Trabajo en equipo', 'Comunicación asertiva', 'Liderazgo', 'Inglés A1'] },
+
+]
 export default function page() {
   return (
-    <div>
-      <div className="container-description bg-neutral-800  p-6  rounded-md">
-        <h1 className="text-2xl md:text-3xl font-bold text-white drop-shadow-lg">Acerca de mi</h1>
-        <span className='text-sm text-white text-justify'>
-          Soy tecnóloga en ADSI (Análisis y Desarrollo de Sistemas de Información) y actualmente estoy cursando Ingeniería, lo que me permite seguir profundizando en mi carrera como desarrolladora.  Con un enfoque en el desarrollo de software, me especializo en tecnologías como React, TypeScript, Next.js y JavaScript para crear aplicaciones web dinámicas y escalables.
-          Tengo conocimientos en diseño de interfaces de usuario (UI/UX) y experiencia en la creación de mockups utilizando Figma, lo que me permite colaborar de manera efectiva en la conceptualización y prototipado de proyectos. Además, aplico metodologías ágiles como Scrum para asegurar una gestión eficiente del ciclo de vida del proyecto.
-          El manejo de herramientas de control de versiones como GitHub y GitLab me ha permitido trabajar en equipos de desarrollo colaborativos y optimizar procesos para cumplir con los objetivos. Siempre busco aprender y aplicar nuevas tecnologías para entregar soluciones innovadoras y eficientes.
-        </span>
+    <>
+      <div className="container-projects flex flex-col gap-6">
+        <div className="container-project bg-neutral-800  p-6  rounded-md w-full h-3/6	">
+          <h2 className="text-xl font-bold text-white drop-shadow-lg">E-commerce Platform</h2>
+          <span className='text-sm text-white text-justify'>Built a full-stack e-commerce solution using React, Node.js, and MongoDB.</span>
+          <Image
+            src="/prueba.gif"
+            alt="avatar"
+            width={470}
+            height={270}
+            className=" mt-3 h-min	"
+          />
+          <hr className='mt-6' />
+          <div className="container-features flex  gap-3 items-center p-3">
+            <Link href='' className='mt-2 flex items-center text-sm text-gray-500'>
+              <GrView className='text-3xl mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400' />Visitar
+            </Link>
+
+            <IoMdHeartEmpty className='text-3xl' />
+            <Link href='https://github.com/Shirly-lap' className="mt-2 flex items-center text-sm text-gray-500 ">
+            Mis repositorios
+          </Link>
+
+          </div>
+        </div>
+
+
       </div>
-    </div>
+    </>
   )
 }

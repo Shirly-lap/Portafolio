@@ -3,10 +3,9 @@ import { NavbarItem } from './ui/NavbarItem';
 
 
 const navBarItems = [
-  { path: "/about", title: " Acerca de Mí" },
-  { path: "/skills", title: "Habilidades" },
   { path: "/projects", title: "Proyectos" },
-  { path: "/contact", title: "Contacto" }
+  { path: "/experience", title: "Experiencia" },
+  { path: "/education", title: "Educación" }
 ];
 
 
@@ -14,7 +13,7 @@ export const Navbar = () => {
   return (
     <>
 
-      <nav className="hidden md:flex  flex-col  items-start gap-y-6 mt-7">
+      <nav className="hidden md:flex gap-7 ">
         {navBarItems.map((item, key)=>(
           <NavbarItem path={item.path} title={item.title} key={key}/>
         ))}
