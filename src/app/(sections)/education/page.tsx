@@ -11,7 +11,7 @@ export default function page() {
   return (
     <div className="container-educataion flex flex-col gap-6">
       {education.map((item, key)=>(
-        <Post title={item.title} subtitle={item.subtitle} date={item.date} showDivider={false} showFeatures={false}/>
+        <Post title={item.title} subtitle={item.subtitle} date={item.date} showDivider={false} showFeatures={false} key={key}/>
       ))}
     </div>
   )

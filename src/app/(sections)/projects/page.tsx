@@ -18,7 +18,7 @@ export default function Projects() {
     <>
       <div className="container-projects flex flex-col gap-6">
         {projects.map((item, key) => (
-          <Post title={item.title} subtitle={item.subtitle} pathImage={item.pathImage} linkPage={item.linkPage}/>
+          <Post title={item.title} subtitle={item.subtitle} pathImage={item.pathImage} linkPage={item.linkPage} key={key}/>
         ))}
       </div>
     </>
