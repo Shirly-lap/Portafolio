@@ -10,7 +10,6 @@ const projects = [
   { title: 'E-commerce Platform', subtitle: "Built a full-stack e-commerce solution using React, Node.js, and MongoDB.", pathImage: "/prueba.gif", linkPage: "/" },
   { title: 'Task Management App', subtitle: "Developed a real-time task management application with React and Firebase.", pathImage: "/prueba.gif", linkPage: "/"  },
   { title: 'Portfolio Website', subtitle: "Designed and implemented a responsive portfolio website using Next.js and Tailwind CSS.", pathImage: "/prueba.gif", linkPage: "/"  },
-
 ]
 
 
