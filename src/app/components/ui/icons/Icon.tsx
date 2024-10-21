@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin, FaRegShareSquare  } from 'react-icons/fa';
 import { IoLocationOutline } from 'react-icons/io5';
 import { IoMdHeartEmpty } from 'react-icons/io'
 import { GrView } from 'react-icons/gr'
+import { MdMarkEmailUnread } from 'react-icons/md';
 
 
 export const icons = {
@@ -12,5 +13,6 @@ export const icons = {
   linkedin: FaLinkedin,
   share: FaRegShareSquare,
   like: IoMdHeartEmpty,
-  view: GrView
+  view: GrView,
+  email: MdMarkEmailUnread,
 };

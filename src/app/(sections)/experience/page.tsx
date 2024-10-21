@@ -13,7 +13,7 @@ export default function page() {
 
   return (
     <>
-      <div className="container-projects flex flex-col gap-6 ">
+      <div className="container-experience flex flex-col gap-6 ">
         {experience.map((item, key) => (
           <Post
             title={item.title}
@@ -21,10 +21,8 @@ export default function page() {
             showFeatures={false} 
             showDivider ={false}
             date={item.date}
-
           />
         ))}
-
       </div>
     </>
 

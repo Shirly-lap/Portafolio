@@ -6,6 +6,9 @@ import About from './about/page'
 import { Header } from '../components/Header'
 import { Title } from '../components/ui/Title'
 import { Subtitle } from '../components/ui/Subtitle'
+import { IoIosContact } from 'react-icons/io'
+import { MdMarkEmailUnread } from 'react-icons/md'
+import { ButtonIcon } from '../components/ui/ButtonIcon'
 
 
 interface Iprops {
@@ -39,12 +42,13 @@ export default function layout({ children }: Iprops) {
                 </div>
               </div>
               <div className="ml-auto space-x-2">
-                {/* <button className="bg-white text-gray-800 hover:bg-gray-100">
-              Contact
-            </button> */}
-                {/* <Link href="/contact" className="bg-neutral-800 text-white hover:bg-gray-100 rounded-lg p-3 flex items-center gap-2 font-semibold">
-                  <IoIosContact /> Contact
+
+                {/* <Link href="/contact" type='email' className="bg-neutral-800 text-white hover:bg-background rounded-lg p-3 flex items-center gap-2 font-semibold ">
+                  <MdMarkEmailUnread /> Correo
+
                 </Link> */}
+
+                <ButtonIcon text='Correo' iconType='email' className='bg-neutral-800 text-white hover:bg-background rounded-lg p-3 flex items-center gap-1 font-semibold '/>
               </div>
             </div>
 
